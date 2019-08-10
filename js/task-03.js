@@ -1,9 +1,9 @@
-function findBestEmployee(employees) {
-  let max = 0;
+function findBestEmployee(userList) {
+  let maxValue = 0;
   let name;
-  for (let value of Object.keys(employees)) {
-    if (max < employees[value]) {
-      max = employees[value];
+  for (let value of Object.keys(userList)) {
+    if (maxValue < userList[value]) {
+      maxValue = userList[value];
       name = value;
     }
   }

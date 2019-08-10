@@ -5,12 +5,10 @@ const products = [
   { name: 'Захват', price: 1200, quantity: 2 },
 ];
 
-function calculateTotalPrice(arr, productName) {
-  for (let args of arr) {
-    for (let key in args) {
-      if (args.key === productName) {
-        return args.price * args.quantity;
-      }
+function calculateTotalPrice(productsArrs, productName) {
+  for (let product of productsArrs) {
+    if (product.name === productName) {
+      return product.price * product.quantity;
     }
   }
 }

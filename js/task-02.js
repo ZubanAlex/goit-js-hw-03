@@ -1,9 +1,9 @@
 function countProps(obj) {
-  let totalValues = 0;
-  for (let value of Object.values(obj)) {
-    totalValues += 1;
+  let totalProps = 0;
+  for (let prop of Object.keys(obj)) {
+    totalProps += 1;
   }
-  return totalValues;
+  return totalProps;
 }
 
 console.log(countProps({})); // 0

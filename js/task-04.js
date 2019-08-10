@@ -1,10 +1,10 @@
-function countTotalSalary(employees) {
-  let sum = 0;
+function countTotalSalary(salaryList) {
+  let sumSalary = 0;
 
-  for (let value of Object.values(employees)) {
-    sum += value;
+  for (let value of Object.values(salaryList)) {
+    sumSalary += value;
   }
-  return sum;
+  return sumSalary;
 }
 
 console.log(countTotalSalary({}));
